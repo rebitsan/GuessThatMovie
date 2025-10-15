@@ -1,0 +1,77 @@
+from joblib import dump, load
+import matplotlib.pyplot as plt
+import seaborn as sns
+from sklearn.cluster import KMeans
+import numpy as np
+
+
+def generate_cluster_plot(kmeans_model_file, input_file, data_x_var, data_y_var, figsize, title, x_title, y_title, x_lim):
+  # Load the existing KMeans model
+  kmeans_model = load(kmeans_model_file)
+
+  # Load data
+  data = np.load(input_file)
+  x = data[data_x_var]
+  y = data[data_y_var]
+
+  # combine the x and y data
+  X = np.vstack([x,y]).T
+
+  # Then fit the model
+  kmeans_model.fit(X)
+
+  # Set the size of the plot here
+  plt.figure(figsize=figsize)
+
+  # Create the color palette (this one is ligher for black cluster text later)
+  palette = sns.color_palette("tab20", len(np.unique(kmeans_model.labels_)))
+
+  # Create scatterplot with color per cluster
+  ax = sns.scatterplot(
+      x=x,
+      y=y,
+      hue=kmeans_model.labels_,
+      palette=palette,
+      alpha=0.5,
+      legend=False,
+      s=7
+  )
+
+  # Get the cluster centroids from the model and the number of clusters
+  centroids = kmeans_model.cluster_centers_
+  num_clusters = len(centroids)
+
+  # Plot each centroid with matching cluster color and label
+  for i in range(num_clusters):
+      # Plot centroids using seaborn scatter
+      plt.scatter(
+          centroids[i, 0],
+          centroids[i, 1],
+          c=[palette[i]],
+          s=150,
+          marker='o',
+          edgecolors='black',
+          linewidths=1.5
+      )
+
+      # Finally plot the cluster number over each centroid circle
+      plt.text(
+          centroids[i, 0],
+          centroids[i, 1],
+          str(i),
+          fontsize=7,
+          fontweight='bold',
+          color='black',
+          ha='center',
+          va='center'
+      )
+
+
+  # Labels and Titles
+  plt.xlabel("K-means Coefficient", fontsize= 14, fontweight='bold', labelpad=15)
+  plt.ylabel("Movie Indicies", fontsize= 14, fontweight='bold', labelpad=15)
+  plt.title("Movie K-means Clustering Scatterplot", fontsize=16, fontweight='bold', pad=25)
+  # also limit the x axis to reduce outlier influence
+  plt.xlim(-x_lim, x_lim)
+
+  plt.show()
