@@ -5,9 +5,6 @@ Our datasets can be found here:
 Movie Plot Summary Dataset:
 https://huggingface.co/datasets/vishnupriyavr/wiki-movie-plots-with-summaries
 
-Movie Quotes Datset:
-https://huggingface.co/datasets/jtatman/famous_movie_quotes
-
 Movie Metadata Datasets:
 https://datasets.imdbws.com/
 
