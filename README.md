@@ -31,7 +31,7 @@ https://docs.google.com/document/d/1Vl8aAwYMc-mPSp_PRpPiuJQyRofd13P7XXjMrxKKcwY/
    b. LinearSVC_hypertuned.joblib
    c. Xgboost_Hypertuned.joblib
    d. DummyModel.joblib
-   e. LE_wrapper.joblib
+   e. LE_wrapper_hypertuned.joblib
    f. hypertune_SGDClassifier.csv
    g. hypertuning_results_LinearSVC.csv
    h. hypertuning_results_Xgboost.csv
