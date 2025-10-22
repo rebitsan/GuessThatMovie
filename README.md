@@ -23,6 +23,7 @@ https://docs.google.com/document/d/1Vl8aAwYMc-mPSp_PRpPiuJQyRofd13P7XXjMrxKKcwY/
  **Output**: It will create df_american_movies_post1969.csv file that contains the base data for supervised and unsupervised learning. A sample of the first 100 rows of this dataset is provided ( First_100_Prepared_Data.csv)
 
 2. Run 2.Supervised Learning.ipynb.
+   **Input**: df_american_movies_post1969.csv
    **Output**: It will create the following files:
    a. SGDClassifier_Hypertuned.joblib
    b. LinearSVC_hypertuned.joblib
