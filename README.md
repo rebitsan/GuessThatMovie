@@ -20,7 +20,7 @@ https://docs.google.com/document/d/1Vl8aAwYMc-mPSp_PRpPiuJQyRofd13P7XXjMrxKKcwY/
  c. title.crew.tsv.gz - https://datasets.imdbws.com/
  d. title.principals.tsv.gz - https://datasets.imdbws.com/
  e. name.basics.tsv.gz - https://datasets.imdbws.com/
- **Output**: It will create df_american_movies_post1969.csv file that contains the data for supervised learning. A sample of first 100 rows of this dataset is provided ( First_100_Prepared_Data.csv)
+ **Output**: It will create df_american_movies_post1969.csv file that contains the base data for supervised and unsupervised learning. A sample of the first 100 rows of this dataset is provided ( First_100_Prepared_Data.csv)
 
 2. Run 2.Supervised Learning.ipynb.
    **Output**: It will create the following files:
