@@ -34,7 +34,7 @@ https://docs.google.com/document/d/1Vl8aAwYMc-mPSp_PRpPiuJQyRofd13P7XXjMrxKKcwY/
    h. hypertuning_results_Xgboost.csv
 
 4. Run 3.TreePloy.ipynb
-   **Inputs**: "LinearSVC_hypertuned.joblib", "LE_wrapper.joblib", 5 user inputs
+   **Inputs**: "LinearSVC_hypertuned.joblib", "LE_wrapper_hypertuned.joblib", 5 user inputs
    **Output:** It will create a tree plot for the user inputs using the LinearSVC model. 
 6. Unsupervised learning files
 7. ClusterPlot.ipynb. It will create a cluster plot. 
