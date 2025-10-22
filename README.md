@@ -1,5 +1,5 @@
 # GuessThatMovie
-This is the github repository for group 20 in the SIADS 696 Milesstone II fall semester 2025 class. 
+This is the GitHub repository for group 20 in the SIADS 696 Milestone II fall semester 2025 class. 
 
 Our datasets can be found here:
 Movie Plot Summary Dataset:
@@ -34,7 +34,7 @@ https://docs.google.com/document/d/1Vl8aAwYMc-mPSp_PRpPiuJQyRofd13P7XXjMrxKKcwY/
    h. hypertuning_results_Xgboost.csv
 
 4. Run 3.TreePloy.ipynb
-   **Inputs**: "LinearSVC_hypertuned.joblib", "LE_wrapper_hypertuned.joblib", 5 user inputs
+   **Inputs**: "LinearSVC_hypertuned.joblib", "LE_wrapper_hypertuned.joblib", 5 user inputs ( raw string, 0 or 1 (corresponding to whether the movie was released before the year 2000), movie genre, actor, director)
    **Output:** It will create a tree plot for the user inputs using the LinearSVC model. 
 6. Unsupervised learning files
 7. ClusterPlot.ipynb. It will create a cluster plot. 
