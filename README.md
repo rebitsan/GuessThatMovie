@@ -36,9 +36,10 @@ https://docs.google.com/document/d/1Vl8aAwYMc-mPSp_PRpPiuJQyRofd13P7XXjMrxKKcwY/
 
 3. Run 3.TreePloy.ipynb
    **Inputs**: "LinearSVC_hypertuned.joblib", "LE_wrapper_hypertuned.joblib", 5 user inputs ( raw string, 0 or 1 (corresponding to whether the movie was released before the year 2000), movie genre, actor, director)
-   **Output:** It will create a tree plot for the user inputs using the LinearSVC model. 
+   **Output:** It will create a tree plot for the user inputs using the LinearSVC model.
+   
 4. Run 4.Unsupervised learning files
-   **Inputs**: df_american_movies_post1969.csv
-   **Outputs**: Contains function that returns 5 most similar movies to user input
+   **Input**: df_american_movies_post1969.csv
+   **Output**: Contains function that returns 5 most similar movies to user input
 
 Extra. ClusterPlot.ipynb. It will create a cluster plot. Not used in final report.
